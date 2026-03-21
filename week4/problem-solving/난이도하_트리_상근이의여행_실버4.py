@@ -3,15 +3,16 @@
 
 # 최악은 가야하는 나라 - 1
 #  최선은? 
-result = []
+import sys
+input = sys.stdin.readline
 
 T = int(input())
+answers = []
 
-for i in range(T):
-    N, M = list(map(int, input().split()))
-    for i in range(M):
-        u, v = list(map(int, input().split()))
-    result.append(N-1)
+for _ in range(T):
+    N, M = map(int, input().split())
+    for _ in range(M):
+        input()
+    answers.append(str(N - 1))
 
-for res in result:
-    print(res)
+sys.stdout.write("\n".join(answers))
